@@ -12,7 +12,7 @@ pub struct BclIterator {
     path: String,
 
     open_files: Vec<BufReader<File>>,
-    cluster_count: Vec<u32>,
+    pub cluster_count: Vec<u32>,
 
     read_position_decode_memory_map: Vec<u8>,
 }

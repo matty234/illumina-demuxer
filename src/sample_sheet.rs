@@ -20,18 +20,7 @@ impl SampleSheet {
             _ => panic!("Invalid base"),
         }
     }
-
-    #[inline(always)]
-    fn index_to_ascii(i: u8) -> char {
-        match i {
-            0 => 'A',
-            1 => 'C',
-            2 => 'G',
-            3 => 'T',
-            _ => panic!("Invalid index"),
-        }
-    }
-
+    
     #[inline]
     fn index_string_to_vec(s: &str) -> usize {
         s.chars()
